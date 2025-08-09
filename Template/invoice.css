@@ -19,7 +19,7 @@ body {
     position: relative;
     overflow: hidden;
 }
-.invoice-header::before {
+/* .invoice-header::before {
     content: '';
     position: absolute;
     bottom: -50px;
@@ -38,7 +38,7 @@ body {
     height: 150px;
     background: rgba(255,255,255,0.05);
     border-radius: 50%;
-}
+} */
 .company-logo {
     width: 40px;
     height: 40px;
@@ -153,4 +153,93 @@ body {
     .invoice-title {
         font-size: 2rem;
     }
+}
+
+
+
+
+@media print  {
+  /* Reduce the overall scale */
+  body {
+    font-size: 10px; /* adjust until it fits */
+    line-height: 1.2;
+  }
+
+  /* Remove extra margins and paddings */
+  .container,
+  .row,
+  .col {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force 1 page */
+  @page {
+    size: A4;
+    margin: 10mm; /* reduce to fit more */
+  }
+
+  /* Tables shrink slightly */
+  table {
+    font-size: 11px;
+  }
+
+  /* Optional: shrink headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 70%;
+  }
+
+  /* Hide elements not needed in print */
+  .no-print {
+    display: none !important;
+  }
+
+
+  .invoice-body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .footer-section {
+        padding-top: 0px;
+    }
+    .invoice-table {
+        margin-bottom: 0px;
+    }
+    .account-due-container {
+    display: flex !important;
+    align-items: center !important;
+    background-color: #4a90e2 !important;
+    width: 290px !important;
+    padding: 5px 0 !important; /* remove fixed height */
+    margin-left: auto !important; /* same as ms-auto */
+  }
+
+  .account-due-label {
+    background-color: white !important;
+    color: #333 !important;
+    font-size: 12px !important;
+    padding: 5px 15px !important; /* instead of fixed height */
+    margin: 0 5px !important;
+  }
+
+  .account-due-value {
+    font-size: 16px !important; /* adjust as needed */
+    font-weight: 600 !important;
+    margin-left: 8px !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important; /* For Chrome, Edge, Safari */
+    print-color-adjust: exact !important;        /* Standard property */
+    color-adjust: exact !important;              /* Older support */
+  }
+}
+
+
+#top-design{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: -5;
+    filter: blur(12px);
 }
