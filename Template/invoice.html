@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="invoice.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- pop -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+   <main style="position: relative;">
+    <div class="container" >
+        <!-- Header -->
+        <div class="invoice-header">
+            <div class="row align-items-center">
+                <div class="col-md-6 pt-auto">
+                   <img width="300px" src="zentegra-logo.png" alt="">
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h1 style="font-size: 60px;" class="invoice-title fw-bold">Invoice</h1>
+                    <div class="text-dark">
+                        <h6>Invoice No: <strong >055 980 125</strong></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="invoice-body">
+            <!-- Bill To Section -->
+            <div class="row bill-to-section">
+                <div class="col-md-6">
+                    <h6 class=" mb-3 fw-semibold" style="color: gray;">BILL TO</h6>
+                    <div class="mb-2">
+                        <h4><strong >MD. Nomi Jackson / <span style="color: #4a90e2;">Director</span></strong></h4>
+                    </div>
+                    <table>
+                        <tr>
+                            <td style="width: 100px;"><strong>E-Mail:</strong></td>
+                            <td>email@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phone:</strong></td>
+                            <td>+1-202-555-444</td>
+                        </tr>
+                        <tr>
+                            <td style="align-content: flex-start;"><strong>Address:</strong></td>
+                            <td>8508 West pacific avenues,<br>
+                        san-865</td>
+                        </tr>
+                    </table>
+                   
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-methods text-end">
+                        
+
+                        <div style="background-color: #4a90e2; width: 290px; height: 50px;" class="text-white d-flex align-items-center mb-4 ms-auto">
+                            <div class="fw-medium align-content-center px-4"  style="background-color: white; color: #333; font-size: 12px; height: 40px; margin: 0px 5px;">ACCOUNT DUE:</div>
+                            <div class="fw-semibold fs-5 ms-2" > $55,000.00</div>
+                        </div>
+
+
+                        <h5 class="mb-2">PAYMENT METHODS</h5>
+                        <hr class="ms-auto" style="width: 300px;">
+                        
+                        <div class="d-flex">
+                            <table class="ms-auto">
+                                <tr>
+                                    <td style="color: #4a90e2;">Paypal:</td>
+                                    <td >payments@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #4a90e2;">Skrill:</td>
+                                    <td>payments@gmail.com</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoice Items Table -->
+            <div class="table-responsive invoice-table">
+                <table class="table">
+                    <thead>
+                        <tr style="border-bottom: 2px solid black;">
+                            <th>Item Description</th>
+                            <th class="text-center">Unit Price</th>
+                            <th class="text-center">Quantity</th>
+                            <th class="text-end">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fw-medium">
+                        <tr>
+                            <td style="font-size: 15px;" class="py-2 fw-medium" >Legal Services <br>
+                                <small style="font-size: 12px;" class="text-muted">Lorem ipsum dolor sit amet.</small>
+                            </td>
+                            <td class="text-center align-content-center" >$350</td>
+                            <td class="text-center align-content-center" >02</td>
+                            <td class="text-end align-content-center" >$350</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 15px;" class="py-2 fw-medium" >Front and Rear Brake Status
+                                <br>
+                                <small style="font-size: 12px;" class="text-muted">Lorem ipsum dolor sit amet.</small>
+                            </td>
+                            <td class="text-center align-content-center" >$150</td>
+                            <td class="text-center align-content-center" >02</td>
+                            <td class="text-end align-content-center" >$300</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 15px;" class="py-2 fw-medium" >New Set of Pedal Arms
+                                <br>
+                                <small style="font-size: 12px;" class="text-muted">Lorem ipsum dolor sit amet.</small>
+                            </td>
+                            <td class="text-center align-content-center" >$150</td>
+                            <td class="text-center align-content-center" >02</td>
+                            <td class="text-end align-content-center" >$300</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 15px;" class="py-2 fw-medium" >Labour Hire
+                                <br>
+                                <small style="font-size: 12px;" class="text-muted">Lorem ipsum dolor sit amet.</small>
+                            </td>
+                            <td class="text-center align-content-center" >$150</td>
+                            <td class="text-center align-content-center" >02</td>
+                            <td class="text-end align-content-center" >$300</td>
+                        </tr>
+                        <tr style="border-bottom: 2px solid black;">
+                            <td style="font-size: 15px;" class="py-2 fw-medium" >Extra Services
+                                <br>
+                                <small style="font-size: 12px;" class="text-muted">Lorem ipsum dolor sit amet.</small>
+                            </td>
+                            <td class="text-center align-content-center" >$150</td>
+                            <td class="text-center align-content-center" >02</td>
+                            <td class="text-end align-content-center" >$300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Totals Section -->
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="total-section ">
+                        <!-- <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span >$1500.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Discount:</span>
+                            <span >$450.00</span>
+                        </div>
+                        <div class="total-row final">
+                            <span>Total:</span>
+                            <span >$1950.00</span>
+                        </div>
+                        <hr>
+                        <div class="total-row">
+                            <span>PAID:</span>
+                            <span >$0.00</span>
+                        </div>
+                        <div class="total-row final text-primary">
+                            <span>DUE:</span>
+                            <span >$1950.00</span>
+                        </div> -->
+                        <table class="fw-semibold">
+                            <tr>
+                                <td class="text-end" style="width: 100px;">Subtotal:</td>
+                                <td class="ps-5">$1500.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end" style="width: 100px;">Discount:</td>
+                                <td class="ps-5">$450.00</td>
+                            </tr>
+                            <tr >
+                                <td class="text-end" style="width: 100px;">Total:</td>
+                                <td class="ps-5">$1950.00</td>
+                            </tr>
+
+                            
+                        </table>
+
+                        <div class="my-3" style="border-bottom: 2px solid black; width: 275px;"></div>
+
+                        <table class="fw-semibold">
+                             <tr>
+                                <td class="text-end" style="width: 100px;">PAID</td>
+                                <td class="ps-5">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end" style="width: 100px;">DUE</td>
+                                <td class="ps-5">$1950.00</td>
+                            </tr>
+                           
+                          
+                            
+                        
+                            
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-section" style="z-index: 100;">
+            
+                <div class="mb-5" style="display: inline-block; width: max-content; max-width: 200px;">
+                    <h5 class="fw-bold">Payment Address</h5>
+                    <small class="opacity-75" style="display: block; white-space: normal; word-wrap: break-word; font-size: 13px;">
+                        8508 West pacific avenues, Vancouver, BC V6P 4M2 Canada
+                    </small>
+                </div>
+
+
+                <div class="" style="width: 400px;">
+                    <h5 class="fw-bold">Terms & Conditions</h5>
+                    <small class="small opacity-75 m-0" style="display: block; font-size: 13px; white-space: normal; word-wrap: break-word;" >
+                        Payment is due within 30 days of invoice date. Late fees may apply for overdue accounts. All work performed is guaranteed for 90 days from completion date.
+                    </small>
+                </div>
+                <br><br>
+            
+        </div>
+        
+    </div>
+
+    <img src="image.png" alt="" style="position: absolute; bottom: 0px; left: 0px; width: 99vw; height: 600px;">
+   </main>
+
+    
+
+    
+</body>
+</html>
